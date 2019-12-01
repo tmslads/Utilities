@@ -7,7 +7,8 @@ from PIL import Image
 
 
 pics = r"C:\Users\Uncle Sam\Desktop\New folder"
-output = r"C:\Users\Uncle Sam\Desktop\New folder\lad"
+output = r"C:\Users\Uncle Sam\Desktop\New folder\converted"
+os.mkdir(output)
 images = os.listdir(pics)
 print(images)
 new_size = (1920, 1080)
