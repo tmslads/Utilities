@@ -16,7 +16,7 @@ clipLocation = f"{loc}\\Assets\\clips"
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
-updater = Updater(token='997899425:AAEvgyU_vFECOBRGMB2FYxGr_yONMeoJk58', use_context=True)
+updater = Updater(token='', use_context=True)
 dispatcher = updater.dispatcher
 
 results = []
