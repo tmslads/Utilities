@@ -53,6 +53,9 @@ def echo(update, context):
     msg = update.message.text
     if update.message.text == '':
         msg = "Arey you didn't give me anything to say you donut buffalo!"
+        
+    punctuation = r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""
+    msg = ''.join(c for c in msg if c not in punctuation)
 
     blob = TextBlob(msg)
     cleaned = blob.words  # Returns list with no punctuation marks
